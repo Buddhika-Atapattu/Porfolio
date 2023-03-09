@@ -2,25 +2,7 @@ $(document).ready(function () {
     // scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // toggle menu
-    $("#toggle").on("click", function () {
-        $("#navbarSupportedContent").toggle();
 
-        if ($("#navbarSupportedContent").is(":visible")) {
-            $("#toggleTick").css({ "margin-left": "2rem", "margin-right": "0rem" });
-            $("body").css({ "overflow-x": "hidden", "overflow-y": "hidden" });
-        }
-        if ($("#navbarSupportedContent").is(":hidden")) {
-            $("#toggleTick").css({ "margin-left": "0rem", "margin-right": "2rem" });
-            $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
-        }
-    });
-
-    // hide menu when click nav item
-    $(".nav-item").on("click", function () {
-        $("#navbarSupportedContent").hide();
-        $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
-    });
 
     $("#arrow_to_up").on("click", function () {
         $(window).scrollTop(0);
@@ -65,8 +47,66 @@ $(document).ready(function () {
         }
 
         preScroll = $(document).scrollTop();
+
+        $("#toggle").on("click", function () {
+            if ($("#navbarSupportedContent").is(":visible")) {
+                $("body").css({ "position": "relative", "overflow": "hidden" });
+                $("#navbarSupportedContent").addClass("opacity-none");
+            }
+            else {
+                $("body").css({ "position": "relative", "overflow": "auto" });
+                $("#navbarSupportedContent").removeClass("opacity-none");
+            }
+        })
     });
     // end
+
+
+    // toggle menu
+    $("#toggle").on("click", function () {
+        $("#navbarSupportedContent").toggle();
+        $("#navbarSupportedContent").addClass("transition");
+
+        if ($("#navbarSupportedContent").is(":visible")) {
+            $("#toggleTick").css({ "margin-left": "2rem", "margin-right": "0rem" });
+            $("body").css({ "overflow-x": "hidden", "overflow-y": "hidden" });
+            $("#mainNav").removeClass("nav-scroll-down");
+            $("#mainNav").removeClass("nav-scroll-up");
+            $("#toggle").addClass("fixed-position-right");
+            $("#toggle").addClass("margin-toggle");
+            $("#navBrand").addClass("fixed-position-left");
+            $("#navBrand").addClass("margin-toggle");
+            $("#navBrand").addClass("p-0");
+        }
+        if ($("#navbarSupportedContent").is(":hidden")) {
+            $("#toggleTick").css({ "margin-left": "0rem", "margin-right": "2rem" });
+            $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
+            $("#mainNav").addClass("nav-scroll-down");
+            $("#mainNav").addClass("nav-scroll-up");
+            $("#toggle").removeClass("fixed-position-right");
+            $("#toggle").removeClass("margin-toggle");
+            $("#navBrand").removeClass("fixed-position-left");
+            $("#navBrand").removeClass("margin-toggle");
+            $("#navBrand").removeClass("p-0");
+        }
+    });
+
+
+    // hide menu when click nav item
+    $(".nav-item").on("click", function () {
+        $("#navbarSupportedContent").hide();
+        $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
+        $("#toggleTick").css({ "margin-left": "0rem", "margin-right": "2rem" });
+        $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
+        $("#mainNav").addClass("nav-scroll-down");
+        $("#mainNav").addClass("nav-scroll-up");
+        $("#toggle").removeClass("fixed-position-right");
+        $("#toggle").removeClass("margin-toggle");
+        $("#navBrand").removeClass("fixed-position-left");
+        $("#navBrand").removeClass("margin-toggle");
+        $("#navBrand").removeClass("p-0");
+    });
+
 
 
     $(window).scroll(function () {
@@ -221,6 +261,8 @@ $(document).ready(function () {
 
         }
     });
+
+
 
 
 });
