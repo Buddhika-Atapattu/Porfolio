@@ -188,6 +188,18 @@ body {
 
 
 @media screen and (max-width:980px) {
+    #arrow_to_up {
+        width: 2rem;
+        position: fixed;
+        right: 0;
+        bottom: 1000vh;
+        margin: 1.5rem 0.5rem;
+        z-index: 10000;
+        opacity: 0;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    
     .home::before {
         position: absolute;
         content: '';
@@ -264,6 +276,18 @@ body {
 }
 
 @media screen and (max-width:500px) {
+    #arrow_to_up {
+        width: 2rem;
+        position: fixed;
+        right: 0;
+        bottom: 1000vh;
+        margin: 1.5rem 0.5rem;
+        z-index: 10000;
+        opacity: 0;
+        transition: all 1s ease;
+        cursor: pointer;
+    }
+    
     .home::before {
         position: absolute;
         content: '';
