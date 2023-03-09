@@ -93,7 +93,10 @@ $(document).ready(function () {
 
         let scroll = $(document).scrollTop();
 
-        // console.log(wde_height);
+        let doc_height = $(document).height();
+
+
+        // console.log(uiux_height);
 
         if (scroll < 50) {
             $("#arrow_to_up").removeClass("arrow-down");
@@ -207,7 +210,7 @@ $(document).ready(function () {
             $("#video_01").removeClass("animate__animated animate__fadeInLeft");
             $("#video_02").removeClass("animate__animated animate__fadeInRight");
         }
-        if (scroll > (home_height + whoAmI_height + skill + wd_height + wde_height + gd_height + gde_height + uiux_height)) {
+        if (scroll > (home_height + whoAmI_height + skill + wd_height + wde_height + gd_height + gde_height + uiux_height + 100)) {
             $("#uiuxTitle").removeClass("animate__animated animate__fadeInLeft");
             $("#uiuxDesign").removeClass("animate__animated animate__fadeInLeft");
             $(".uiux-text").removeClass("animate__animated animate__fadeInRight");
