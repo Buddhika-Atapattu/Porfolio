@@ -181,6 +181,7 @@ body {
 .main-text {
     margin-top: 10rem !important;
     padding: 0 !important;
+    cursor: default;
 }
 
 .let,
@@ -231,6 +232,9 @@ body {
     background-size: 100%;
     z-index: -1;
     transition: all 1s linear;
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
 }
 
 .awesome::before {
@@ -249,6 +253,9 @@ body {
     background-size: 100%;
     z-index: -1;
     transition: all 1s linear;
+    transition-delay: 0.75s;
+    -webkit-transition-delay: 0.75s;
+    -moz-transition-delay: 0.75s;
 }
 
 .design::before {
@@ -267,6 +274,9 @@ body {
     background-size: 100%;
     z-index: -1;
     transition: all 1s linear;
+    transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
 }
 
 .together::before {
@@ -285,6 +295,9 @@ body {
     background-size: 100%;
     z-index: -1;
     transition: all 1s linear;
+    transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -moz-transition-delay: 1.25s;
 }
 
 .main-text:hover .let::before,
