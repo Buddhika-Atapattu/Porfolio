@@ -39,7 +39,35 @@ $(document).ready(function () {
         (this).swiper.autoplay.start();
     });
 
+    // navigation scroll function
 
+    var preScroll = $(document).scrollTop();
+
+    var navHeight = $('#mainNav').outerHeight();
+
+    $(window).scroll(function () {
+        var scrolled = $(document).scrollTop();
+
+        if ((scrolled <= navHeight)) {
+            $("#mainNav").removeClass("nav-scroll-down");
+            $("#mainNav").removeClass("nav-scroll-up");
+        }
+        else {
+
+            if (preScroll < scrolled) {
+                $("#mainNav").addClass("nav-scroll-down");
+                $("#mainNav").removeClass("nav-scroll-up");
+            }
+            else {
+                $("#mainNav").removeClass("nav-scroll-down");
+                $("#mainNav").addClass("nav-scroll-up");
+            }
+        }
+
+        preScroll = $(document).scrollTop();
+    });
+    
+    // end
 
     let preScroll = $(document).scrollTop();
 
