@@ -13,7 +13,7 @@
         •	Additional experience working with WordPress and different frameworks.
         One of the key motivations that is available in this job role is that there is an opportunity where new skills and technologies can be learnt and applied in production. I’m looking forward to discussing with you further about my passion for all aspects of software development, graphic designing, web development and designing.
         ">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Portfolio, graphic-design">
     <meta name="author" content="Buddhika Atapattu">
     <meta property="og:site_name" content="Buddhika Atapattu">
     <meta property="og:title" content="Buddhika Atapattu Portfolio">
@@ -34,7 +34,7 @@
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     
-    <meta property="og:url" content="your_website_url_here">
+    <meta property="og:url" content="https://buddhika-atapattu.github.io/Porfolio/">
     <!-- title -->
     <title>Buddhika Atapattu Portfolio</title>
     <!-- css file -->
@@ -106,7 +106,7 @@
                                 <a class="nav-link" href="#uiux">UI/UX Designing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact_me">Contact Me</a>
+                                <a class="nav-link" href="#footer">Contact Me</a>
                             </li>
                         </ul>
                     </div>
@@ -220,7 +220,7 @@
                         <div class="swiper-slide">
                             <div class="card wb-card border-0">
                                 <div class="card-header">
-                                    <img class="card-img-top" alt="web development" src="./IMG/Web-02.png">
+                                    <img class="card-img-top" alt="web development" src="./IMG/web-02.png">
                                 </div>
                                 <div class="card-body text-center">
                                     <button class="wb-btn" onclick="window.open('http://chitramtv.fr/index.php?route=common/home')">
@@ -728,7 +728,7 @@
                 <h1 class="display-5 text-center mb-3" id="videoTitle">Video Editing</h1>
                 <div class="col-lg-6">
                     <div class="card h-100" id="video_01">
-                        <div class="card-body m-auto">
+                        <div class="card-body m-auto video-card-body">
                             <div class="embed-responsive embed-responsive-4by3">
                                 <iframe class="test-video" src="https://www.youtube.com/embed/6ua5JzyMhbE" title="YouTube video player"
                                     frameborder="0"
@@ -740,7 +740,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="card h-100" id="video_02">
-                        <div class="card-body m-auto">
+                        <div class="card-body m-auto video-card-body">
                             <div class="embed-responsive embed-responsive-4by3">
                                 <iframe class="test-video" src="https://www.youtube.com/embed/9PQ0jfs2rI0" title="YouTube video player"
                                     frameborder="0"
@@ -833,8 +833,10 @@
         var swiper = new Swiper(".uiux-swiper", {
                 effect: "cards",
                 grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
                 autoplay: {
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                 },
             });
