@@ -15,7 +15,7 @@ body {
     width: 3rem;
     position: fixed;
     right: 0;
-    bottom: 1000px;
+    bottom: 1000vh;
     margin: 1.5rem;
     z-index: 10000;
     opacity: 0;
