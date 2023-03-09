@@ -28,16 +28,24 @@ body {
     bottom: 0 !important;
 }
 
+<<<<<<< HEAD
 
 /* navigation scroll css */
 
+=======
+/* navigation scroll css */
+
+>>>>>>> 05a51e40a7e2c189732ffcc3072845295373d414
 .nav-scroll-up {
     position: fixed !important;
     width: 100% !important;
     top: -1000vh !important;
     left: 0 !important;
     padding: 1rem 3.5rem !important;
+<<<<<<< HEAD
     opacity: 0.9 !important;
+=======
+>>>>>>> 05a51e40a7e2c189732ffcc3072845295373d414
     background-image: -webkit-radial-gradient(top right, rgba(53, 0, 54, 0.729), rgba(30, 0, 55, 0.838)), url("../IMG/navbg.jpg") !important;
     background-position: center !important;
     background-size: cover !important;
@@ -52,7 +60,10 @@ body {
     top: 0 !important;
     left: 0 !important;
     padding: 1rem 3.5rem !important;
+<<<<<<< HEAD
     opacity: 0.9 !important;
+=======
+>>>>>>> 05a51e40a7e2c189732ffcc3072845295373d414
     background-image: -webkit-radial-gradient(top right, rgba(53, 0, 54, 0.729), rgba(30, 0, 55, 0.838)), url("../IMG/navbg.png") !important;
     background-position: center !important;
     background-size: cover !important;
@@ -62,7 +73,10 @@ body {
 }
 
 /* end */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 05a51e40a7e2c189732ffcc3072845295373d414
 
 /* home section */
 .home {
@@ -235,7 +249,11 @@ body {
         transition: all 1s ease;
         cursor: pointer;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 05a51e40a7e2c189732ffcc3072845295373d414
     .home::before {
         position: absolute;
         content: '';
@@ -323,7 +341,11 @@ body {
         transition: all 1s ease;
         cursor: pointer;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 05a51e40a7e2c189732ffcc3072845295373d414
     .home::before {
         position: absolute;
         content: '';
