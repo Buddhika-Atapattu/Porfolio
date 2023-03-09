@@ -26,17 +26,18 @@ $(document).ready(function () {
         $(window).scrollTop(0);
     });
 
-    // $(".web-development-swiper").hover(function () {
-    //     (this).swiper.autoplay.stop();
-    // }, function () {
-    //     (this).swiper.autoplay.start();
-    // });
+    
+    $(".web-development-swiper").hover(function () {
+        (this).swiper.autoplay.stop();
+    }, function () {
+        (this).swiper.autoplay.start();
+    });
 
-    // $(".uiux-swiper").hover(function () {
-    //     (this).swiper.autoplay.stop();
-    // }, function () {
-    //     (this).swiper.autoplay.start();
-    // });
+    $(".uiux-swiper").hover(function () {
+        (this).swiper.autoplay.stop();
+    }, function () {
+        (this).swiper.autoplay.start();
+    });
 
 
 
