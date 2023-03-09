@@ -15,38 +15,18 @@ body {
     width: 3rem;
     position: fixed;
     right: 0;
+    bottom: 1000px;
     margin: 1.5rem;
     z-index: 10000;
-    display: none;
     opacity: 0;
+    transition: all 1s ease;
     cursor: pointer;
 }
 
 .arrow-down {
-    display: flex !important;
     opacity: 1 !important;
-    transition: all 1s ease;
     bottom: 0 !important;
-    -webkit-animation-name: arrowDown;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-duration: all 1s;
-    -moz-animation-name: arrowDown;
-    -moz-animation-timing-function: ease;
-    -moz-animation-duration: all 1s;
 }
-
-@keyframes arrowDown {
-    0% {
-        transform: translateY(0%);
-        top: 0;
-    }
-
-    100% {
-        transform: translateY(100%);
-        top: auto;
-    }
-}
-
 
 /* home section */
 .home {
