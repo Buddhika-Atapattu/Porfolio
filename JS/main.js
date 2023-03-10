@@ -150,7 +150,7 @@ $(document).ready(function () {
         if (scroll < 300) {
             $("#homeText").addClass("animate__animated animate__fadeInLeft");
             $("#homeBtn").addClass("animate__animated animate__fadeInRight");
-            // $("#home").addClass("animate-home-sub");
+            // $("#home").addClass("home");
 
             $("#whoAmIMainText").removeClass("animate__animated animate__fadeInLeft");
             $(".little-tigger").removeClass("animate__animated animate__fadeInLeft");
@@ -159,7 +159,7 @@ $(document).ready(function () {
         if (scroll > home_height) {
             $("#homeText").removeClass("animate__animated animate__fadeInLeft");
             $("#homeBtn").removeClass("animate__animated animate__fadeInRight");
-            // $("#home").removeClass("animate-home-sub");
+            // $("#home").removeClass("home");
 
             $("#whoAmIMainText").addClass("animate__animated animate__fadeInLeft");
             $(".little-tigger").addClass("animate__animated animate__fadeInLeft");
