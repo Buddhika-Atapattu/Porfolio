@@ -1,13 +1,8 @@
-
 $(document).ready(function () {
+    // console.log("Time until DOMready: ", Date.now() - timerStart);
+
     // scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    let load = $("#preloader");
-
-    load.css({ "display": "none" });
-    $("html").addClass("show-scroll");
-
 
     $("#arrow_to_up").on("click", function () {
         $(window).scrollTop(0);
