@@ -825,6 +825,21 @@ html::-webkit-scrollbar-thumb:hover {
     background-size: cover;
 }
 
+.whoAmI::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .little-tigger {
     width: 25rem;
     align-items: center;
@@ -858,17 +873,13 @@ html::-webkit-scrollbar-thumb:hover {
     }
 
     .whoAmI::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100% !important;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    }
+
+    .whoAmI::after {
+        width: 0% !important;
+        height: 100%;
     }
 
     .little-tigger {
@@ -894,17 +905,13 @@ html::-webkit-scrollbar-thumb:hover {
     }
 
     .whoAmI::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    }
+
+    .whoAmI::after {
+        width: 0%;
+        height: 100%;
     }
 
     .little-tigger {
@@ -929,6 +936,23 @@ html::-webkit-scrollbar-thumb:hover {
 #skills {
     padding: 3.5rem 6.5rem;
     position: relative;
+}
+
+#skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #skills::after {
@@ -973,18 +997,14 @@ html::-webkit-scrollbar-thumb:hover {
         position: relative;
     }
 
+    #skills::before {
+        width: 100%;
+        height: 100%;
+    }
+
     #skills::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 0%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
 
     #skillTitle {
@@ -1038,6 +1058,21 @@ html::-webkit-scrollbar-thumb:hover {
     background-size: cover;
 }
 
+#wd::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #wdTitle {
     margin: 1.5rem 0rem;
     background-image: -webkit-radial-gradient(top right, rgb(255 0 255 / 50%), rgb(110 0 255));
@@ -1065,17 +1100,13 @@ html::-webkit-scrollbar-thumb:hover {
     }
 
     #wd::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    }
+
+    #wd::after {
+        width: 0%;
+        height: 100%;
     }
 
     #wdTitle {
@@ -1113,6 +1144,23 @@ html::-webkit-scrollbar-thumb:hover {
     position: relative;
 }
 
+#wde::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #wde::after {
     content: "";
     position: absolute;
@@ -1126,30 +1174,6 @@ html::-webkit-scrollbar-thumb:hover {
     background-position: center;
     background-size: cover;
 }
-
-/* carousel css */
-
-/* .carousel-caption {
-    position: absolute !important;
-    right: auto !important;
-    bottom: 0rem !important;
-    left: 0 !important;
-    padding-top: 4.25rem !important;
-    padding-bottom: 4.25rem !important;
-    color: #fff !important;
-    text-align: center !important;
-    width: 100% !important;
-    background-image: -webkit-radial-gradient(top right, rgb(53 7 53 / 46%), rgb(37 3 64 / 50%));
-    box-shadow: 0px -6px 20px 0px #0009;
-} */
-
-/* .caption-btn {
-    background-color: #e7007880 !important;
-    padding: 0.5rem 2.5rem !important;
-    font-weight: 900 !important;
-    color: #fff !important;
-    border: 0.25rem #e70078 solid !important;
-} */
 
 .carousel-img {
     width: 100%;
@@ -1283,18 +1307,14 @@ html::-webkit-scrollbar-thumb:hover {
         padding: 3.5rem 0.5rem;
     }
 
+    #wde::before {
+        width: 100%;
+        height: 100%;
+    }
+
     #wde::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 0%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
 
     #wdSlider {
@@ -1369,6 +1389,21 @@ swiper-slide {
     height: 100%;
     z-index: -1;
     background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#gd::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1451,6 +1486,23 @@ swiper-slide {
     background-size: cover;
 }
 
+#graphic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .logos {
     height: auto;
     width: 20rem;
@@ -1484,18 +1536,15 @@ swiper-slide {
     }
 
     #graphic::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 0%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
+
+    #graphic::before {
+        width: 100%;
+        height: 100%;
+    }
+
 
     .logos {
         height: auto;
@@ -1549,6 +1598,21 @@ swiper-slide {
     background-size: cover;
 }
 
+#uiux::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #uiuxTitle {
     margin: 1.5rem 0rem;
     background-image: -webkit-radial-gradient(top right, rgb(255 0 255 / 50%), rgb(110 0 255));
@@ -1574,18 +1638,16 @@ swiper-slide {
     }
 
     #uiux::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
+
+    #uiux::after {
+        width: 0%;
+        height: 100%;
+    }
+
+
 
     #uiuxTitle {
         margin: 1.5rem 0rem;
@@ -1628,6 +1690,23 @@ swiper-slide {
     background-size: cover;
 }
 
+#video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/bg-section.jpg");
+    opacity: 0.5;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 #videoTitle {
     margin: 1.5rem 0rem;
     background-image: -webkit-radial-gradient(top right, rgb(255 0 255 / 50%), rgb(110 0 255));
@@ -1665,18 +1744,14 @@ swiper-slide {
         position: relative;
     }
 
+    #video::before {
+        width: 100%;
+        height: 100%;
+    }
+
     #video::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 0%;
         height: 100%;
-        z-index: -1;
-        background-image: -webkit-radial-gradient(top right, rgb(167, 157, 167, 0.5), rgb(128, 94, 156, 0.5)), url("../IMG/pexels-henry-&-co-1939485.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
     }
 
     #videoTitle {
