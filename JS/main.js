@@ -99,6 +99,7 @@ $(document).ready(function () {
     // hide menu when click nav item
     $(".nav-item").on("click", function () {
         $("#navbarSupportedContent").hide();
+        $("html").css({ "overflow-x": "hidden", "overflow-y": "auto" });
         $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
         $("#toggleTick").css({ "margin-left": "0rem", "margin-right": "2rem" });
         $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
