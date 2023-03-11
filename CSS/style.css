@@ -247,6 +247,7 @@ html::-webkit-scrollbar-thumb:hover {
 .awesome,
 .design,
 .together {
+    display: inline-table;
     font-weight: bold;
     -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
     color: transparent;
@@ -365,50 +366,6 @@ html::-webkit-scrollbar-thumb:hover {
 .main-text:hover .together::before {
     width: 100%;
 }
-
-/* .let {
-    font-weight: bolder !important;
-    -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
-    color: transparent;
-    background-size: 100%;
-    width: 0%;
-    transition: 2s;
-    text-align: center;
-    position: relative;
-
-    background-image: -webkit-radial-gradient(bottom right, rgba(177, 0, 148, 0.9), rgba(158, 0, 183, 0.873));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -webkit-text-stroke: 0rem rgb(255, 255, 255);
-    background-size: 100%;
-}
-
-.let::before {
-    content: "let's";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: all 1s linear;
-    background-image: -webkit-radial-gradient(bottom right, rgba(177, 0, 148, 0.9), rgba(158, 0, 183, 0.873));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -webkit-text-stroke: 0rem rgb(255, 255, 255);
-    background-size: 100%;
-    opacity: 0;
-}
-
-.main-text:hover .let::before {
-    width: 100%;
-} */
-
-
 
 .home-btn {
     border: 0.15rem solid #ff00c3 !important;
@@ -585,6 +542,7 @@ html::-webkit-scrollbar-thumb:hover {
     .awesome,
     .design,
     .together {
+        display: inline-table;
         font-weight: bold;
         -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
         color: transparent;
@@ -593,6 +551,125 @@ html::-webkit-scrollbar-thumb:hover {
         text-align: center;
         position: relative;
     }
+
+    .main-text {
+        margin-top: 10rem !important;
+        padding: 0 !important;
+        cursor: default;
+    }
+
+    .let::before {
+        content: "Let's";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 0%;
+        height: 100%;
+        background-image: -webkit-radial-gradient(bottom left, rgb(255, 0, 157), rgb(221, 0, 255));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 0rem rgb(255, 255, 255);
+        background-size: 100%;
+        z-index: -1;
+        transition: all 1s linear;
+    }
+
+    .create::before {
+        content: "create";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 0%;
+        height: 100%;
+        background-image: -webkit-radial-gradient(bottom left, rgb(255, 0, 157), rgb(221, 0, 255));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 0rem rgb(255, 255, 255);
+        background-size: 100%;
+        z-index: -1;
+        transition: all 1s linear;
+        transition-delay: 0.5s;
+        -webkit-transition-delay: 0.5s;
+        -moz-transition-delay: 0.5s;
+    }
+
+    .awesome::before {
+        content: "awesome";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 0%;
+        height: 100%;
+        background-image: -webkit-radial-gradient(bottom left, rgb(255, 0, 157), rgb(221, 0, 255));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 0rem rgb(255, 255, 255);
+        background-size: 100%;
+        z-index: -1;
+        transition: all 1s linear;
+        transition-delay: 0.75s;
+        -webkit-transition-delay: 0.75s;
+        -moz-transition-delay: 0.75s;
+    }
+
+    .design::before {
+        content: "designs";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 0%;
+        height: 100%;
+        background-image: -webkit-radial-gradient(bottom left, rgb(255, 0, 157), rgb(221, 0, 255));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 0rem rgb(255, 255, 255);
+        background-size: 100%;
+        z-index: -1;
+        transition: all 1s linear;
+        transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+        -moz-transition-delay: 1s;
+    }
+
+    .together::before {
+        content: "together";
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 0%;
+        height: 100%;
+        background-image: -webkit-radial-gradient(bottom left, rgb(255, 0, 157), rgb(221, 0, 255));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -webkit-text-stroke: 0rem rgb(255, 255, 255);
+        background-size: 100%;
+        z-index: -1;
+        transition: all 1s linear;
+        transition-delay: 1.25s;
+        -webkit-transition-delay: 1.25s;
+        -moz-transition-delay: 1.25s;
+    }
+
+    .main-text:hover .let::before,
+    .main-text:hover .create::before,
+    .main-text:hover .awesome::before,
+    .main-text:hover .design::before,
+    .main-text:hover .together::before {
+        width: 100%;
+    }
+
+
+
 }
 
 @media screen and (max-width:500px) {
