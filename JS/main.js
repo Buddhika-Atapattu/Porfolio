@@ -70,6 +70,7 @@ $(document).ready(function () {
 
         if ($("#navbarSupportedContent").is(":visible")) {
             $("#toggleTick").css({ "margin-left": "2rem", "margin-right": "0rem" });
+            $("html").css({ "overflow-x": "hidden", "overflow-y": "hidden" });
             $("body").css({ "overflow-x": "hidden", "overflow-y": "hidden" });
             $("#mainNav").removeClass("nav-scroll-down");
             $("#mainNav").removeClass("nav-scroll-up");
@@ -78,9 +79,11 @@ $(document).ready(function () {
             $("#navBrand").addClass("fixed-position-left");
             $("#navBrand").addClass("margin-toggle");
             $("#navBrand").addClass("p-0");
+
         }
         if ($("#navbarSupportedContent").is(":hidden")) {
             $("#toggleTick").css({ "margin-left": "0rem", "margin-right": "2rem" });
+            $("html").css({ "overflow-x": "hidden", "overflow-y": "auto" });
             $("body").css({ "overflow-x": "hidden", "overflow-y": "auto" });
             $("#mainNav").addClass("nav-scroll-down");
             $("#mainNav").addClass("nav-scroll-up");
