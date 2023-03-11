@@ -421,6 +421,14 @@ html::-webkit-scrollbar-thumb:hover {
     display: inline;
 }
 
+#main_btn_contact {
+    text-align: end;
+}
+
+#main_btn_view_cv {
+    text-align: start;
+}
+
 
 
 @media screen and (max-width:980px) {
@@ -688,6 +696,13 @@ html::-webkit-scrollbar-thumb:hover {
         width: 100%;
     }
 
+    #main_btn_contact {
+        text-align: center;
+    }
+
+    #main_btn_view_cv {
+        text-align: center;
+    }
 
 
 }
