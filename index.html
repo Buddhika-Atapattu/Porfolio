@@ -49,12 +49,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- swiper link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- preloader -->
+    <link rel="stylesheet" href="./CSS/percent-preloader.css">
+    <!-- <link rel="stylesheet" href="./CSS/percent-preloader.min.css"> -->
+    <script src="./JS/percent-preloader.js"></script>
+    <!-- <script src="./JS/percent-preloader.min.js"></script> -->
     <!-- jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="./JS/load.js"></script>
 </head>
 <body>
-    <div id="preloader"></div>
+    <div class="preloader">
+        <div class="inner">
+            <span class="percentage"><span id="percentage">0</span>%</span>
+        </div>
+        <div class="loader-progress" id="loader-progress"> </div>
+    </div>
+
+    <!-- <div id="preloader">
+        <div id="preloadText"></div>
+    </div> -->
+
     <svg id="arrow_to_up" class="" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 370.38 256">
         <defs>
@@ -818,6 +833,7 @@
 
 <!-- Initialize Swiper -->
 <script>
+    
     // swiper js
         var swiper01 = new Swiper(".web-development-swiper", {
             effect: "coverflow",
